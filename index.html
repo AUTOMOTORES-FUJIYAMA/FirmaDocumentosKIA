@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Documentos - Fujiyama</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="KIA-FUJIYAMA-NEGRO.png" alt="Logo Fujiyama" />
+      </div>
+    </header>
+
+    <div class="qr-message">
+      <p>Gestión de Documentos de Entrega</p>
+    </div>
+
+    <div class="form-container">
+      <form id="contactForm">
+        <div class="form-step active">
+          <div class="form-group">
+            <label for="nombreCli">Nombre completo del cliente</label>
+            <input type="text" id="nombreCli" required>
+          </div>
+          <!-- <div class="form-group">
+            <label for="nombreCli">Nombre completo del vendedor</label>
+            <input type="text" id="vendedor" required>
+          </div> -->
+          <div class="form-group">
+            <label for="cedula">Cédula / NIT</label>
+            <input type="text" id="cedula" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="vehiculo">Linea Vehiculo</label>
+            <input type="text" id="linea" required>
+          </div>
+
+          <div class="form-group">
+            <label for="vehiculo">Vehículo (Modelo)</label>
+            <input type="text" id="modelo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="vehiculo">Año</label>
+            <input type="text" id="año" required>
+          </div>
+
+          <div class="form-group">
+            <label for="chasis">Chasis (VIN)</label>
+            <input type="text" id="chasis" required>
+          </div>
+
+          <div class="form-group">
+            <label for="color">Color</label>
+            <input type="text" id="color" required>
+          </div>
+
+          <div class="form-group">
+            <label for="color">Consecutivo</label>
+            <input type="text" id="consecutivo" required>
+          </div>
+
+          <!-- <div class="form-group">
+            <label for="placa">Placa</label>
+            <input type="text" id="placa" required>
+          </div> -->
+
+          <div class="form-group">
+            <label for="vitrina">Vitrina / Sede</label>
+            <input type="text" id="vitrina" required>
+          </div>
+          <h3>Equipamiento de Seguridad</h3>
+
+<div class="equipamiento-grid">
+
+  <label><input type="checkbox" id="abs"> SISTEMA ANTIBLOQUEO DE FRENOS (ABS)</label>
+
+  <label><input type="checkbox" id="esc"> CONTROL ELECTRÓNICO DE ESTABILIDAD (ESC)</label>
+
+  <label><input type="checkbox" id="fcw"> ALERTA DE COLISIÓN FRONTAL (FCW)</label>
+
+  <label><input type="checkbox" id="fca"> FRENADO AUTÓNOMO DE EMERGENCIA (FCA)</label>
+
+  <label>
+    <input type="checkbox" id="airbags">
+    AIRBAGS
+  </label>
+
+  <div class="form-group" id="airbagsContainer" style="display:none;">
+    <label>Número de Airbags</label>
+    <input
+      type="number"
+      id="cantidadAirbags"
+      min="1"
+      value="1">
+  </div>
+
+  <label><input type="checkbox" id="isofix"> SISTEMA DE SUJECIÓN ISOFIX</label>
+
+  <label><input type="checkbox" id="lucesAuto"> CONTROL AUTOMÁTICO DE LUCES</label>
+
+  <label><input type="checkbox" id="lucesDiurnas"> LUCES DE CONDUCCIÓN DIURNA</label>
+
+</div>
+
+          <div class="navigation-buttons">
+            <button type="button" class="btn" onclick="generatePDFs()">Generar e Imprimir Documentos</button>
+          </div>
+
+          
+        </div>
+      </form>
+
+      <div id="loading-message" class="completed-message" style="display:none;">
+        <div class="spinner"></div>
+        <h2>Procesando PDFs...</h2>
+        <p>Los archivos se descargarán en un momento.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
