@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -83,43 +85,39 @@
           </div>
           <h3>Equipamiento de Seguridad</h3>
 
-<div class="equipamiento-grid">
+          <div class="equipamiento-grid">
 
-  <label><input type="checkbox" id="abs"> SISTEMA ANTIBLOQUEO DE FRENOS (ABS)</label>
+            <label><input type="checkbox" id="abs"> SISTEMA ANTIBLOQUEO DE FRENOS (ABS)</label>
 
-  <label><input type="checkbox" id="esc"> CONTROL ELECTRÓNICO DE ESTABILIDAD (ESC)</label>
+            <label><input type="checkbox" id="esc"> CONTROL ELECTRÓNICO DE ESTABILIDAD (ESC)</label>
 
-  <label><input type="checkbox" id="fcw"> ALERTA DE COLISIÓN FRONTAL (FCW)</label>
+            <label><input type="checkbox" id="fcw"> ALERTA DE COLISIÓN FRONTAL (FCW)</label>
 
-  <label><input type="checkbox" id="fca"> FRENADO AUTÓNOMO DE EMERGENCIA (FCA)</label>
+            <label><input type="checkbox" id="fca"> FRENADO AUTÓNOMO DE EMERGENCIA (FCA)</label>
 
-  <label>
-    <input type="checkbox" id="airbags">
-    AIRBAGS
-  </label>
+            <label>
+              <input type="checkbox" id="airbags">
+              AIRBAGS
+            </label>
 
-  <div class="form-group" id="airbagsContainer" style="display:none;">
-    <label>Número de Airbags</label>
-    <input
-      type="number"
-      id="cantidadAirbags"
-      min="1"
-      value="1">
-  </div>
+            <div class="form-group" id="airbagsContainer" style="display:none;">
+              <label>Número de Airbags</label>
+              <input type="number" id="cantidadAirbags" min="1" value="1">
+            </div>
 
-  <label><input type="checkbox" id="isofix"> SISTEMA DE SUJECIÓN ISOFIX</label>
+            <label><input type="checkbox" id="isofix"> SISTEMA DE SUJECIÓN ISOFIX</label>
 
-  <label><input type="checkbox" id="lucesAuto"> CONTROL AUTOMÁTICO DE LUCES</label>
+            <label><input type="checkbox" id="lucesAuto"> CONTROL AUTOMÁTICO DE LUCES</label>
 
-  <label><input type="checkbox" id="lucesDiurnas"> LUCES DE CONDUCCIÓN DIURNA</label>
+            <label><input type="checkbox" id="lucesDiurnas"> LUCES DE CONDUCCIÓN DIURNA</label>
 
-</div>
+          </div>
 
           <div class="navigation-buttons">
             <button type="button" class="btn" onclick="generatePDFs()">Generar e Imprimir Documentos</button>
           </div>
 
-          
+
         </div>
       </form>
 
@@ -133,4 +131,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -6,28 +6,28 @@ async function generatePDFs() {
 
     // Captura de datos del formulario (Se mantiene igual)
     const data = {
-        nombreCli: document.getElementById('nombreCli').value.toUpperCase(),
-        cedula: document.getElementById('cedula').value,
-        telefono: document.getElementById('telefono').value,
-        correo: document.getElementById('email').value,
-        chasis: document.getElementById('chasis').value.toUpperCase(), 
-        color: document.getElementById('color').value.toUpperCase(),
-        modelo: document.getElementById('modelo').value.toUpperCase(),
-        linea: document.getElementById('linea').value.toUpperCase(),
-        año: document.getElementById('año').value.toUpperCase(),
-        consecutivo: document.getElementById('consecutivo').value.toUpperCase(),
+      nombreCli: document.getElementById('nombreCli').value.toUpperCase(),
+         cedula: document.getElementById('cedula').value,
+       telefono: document.getElementById('telefono').value,
+         correo: document.getElementById('email').value,
+         chasis: document.getElementById('chasis').value.toUpperCase(), 
+          color: document.getElementById('color').value.toUpperCase(),
+         modelo: document.getElementById('modelo').value.toUpperCase(),
+          linea: document.getElementById('linea').value.toUpperCase(),
+            año: document.getElementById('año').value.toUpperCase(),
+    consecutivo: document.getElementById('consecutivo').value.toUpperCase(),
         vitrina: document.getElementById('vitrina').value.toUpperCase(),
-        fecha: new Date().toLocaleDateString(),
+       fecha: new Date().toLocaleDateString(),
         equipamiento: {
             abs: document.getElementById('abs').checked,
             esc: document.getElementById('esc').checked,
             fcw: document.getElementById('fcw').checked,
             fca: document.getElementById('fca').checked,
-            airbags: document.getElementById('airbags').checked,
-            cantidadAirbags: document.getElementById('cantidadAirbags').value,
-            isofix: document.getElementById('isofix').checked,
-            lucesAuto: document.getElementById('lucesAuto').checked,
-            lucesDiurnas: document.getElementById('lucesDiurnas').checked
+        airbags: document.getElementById('airbags').checked,
+cantidadAirbags: document.getElementById('cantidadAirbags').value,
+         isofix: document.getElementById('isofix').checked,
+      lucesAuto: document.getElementById('lucesAuto').checked,
+   lucesDiurnas: document.getElementById('lucesDiurnas').checked
         }
     };
 
@@ -132,7 +132,7 @@ async function processAndAppend(fileName, data, mergedPdf) {
             draw(data.nombreCli, 135, 170);
             draw(data.nombreCli, 70, 509, 7);
             draw(data.modelo, 135, 187);
-            draw(today, 300, 170);
+            draw(today, 435, 170);
             break;
     }
 
