@@ -130,7 +130,7 @@ async function processAndAppend(fileName, data, mergedPdf) {
 
         case "FORMATO DE ENTREGA DE VENTA -SERVICIO.pdf":
             draw(data.nombreCli, 135, 170);
-            draw(data.nombreCli, 70, 509, 7);
+            draw(data.nombreCli, 70, 509);
             draw(data.modelo, 135, 187);
             draw(today, 435, 170);
             break;
